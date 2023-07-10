@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/uiupdate.dart';
 
 void main() {
-  runApp(MaterialApp(
-      title: 'Flutter Tutorial',
+  runApp(
+    MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Tutorial'),
+        body: Center(
+          child: UiUpdatesDemo(),
         ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      )));
+      ),
+    ),
+  );
 }
