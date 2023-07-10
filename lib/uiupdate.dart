@@ -7,4 +7,11 @@ class UiUpdatesDemo extends StatefulWidget {
   State<UiUpdatesDemo> createState() => _UiUpdatesDemoState();
 }
 
-class
+class _UiUpdatesDemoState extends State<UiUpdatesDemo> {
+  var _counter = false;
+
+  @override
+  Widget build(context) {
+    return Text("sajal");
+  }
+}

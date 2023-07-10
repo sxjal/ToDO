@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/uiupdate.dart';
+import 'package:todo/uiupdate.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
         body: Center(
           child: UiUpdatesDemo(),
