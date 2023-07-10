@@ -13,26 +13,31 @@ class _ButtonUpdatesDemoState extends State<ButtonUpdatesDemo> {
   Widget build(context) {
     print("build method for buttonupdatedemo executed");
 
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Column(
       children: [
-        TextButton(
-          onPressed: () {
-            setState(() {
-              _counter = !_counter;
-            });
-          },
-          child: const Text('Yes'),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  _counter = true;
+                });
+              },
+              child: const Text('Yes'),
+            ),
+            const SizedBox(width: 20),
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  _counter = false;
+                });
+              },
+              child: const Text('No'),
+            ),
+          ],
         ),
-        const SizedBox(width: 20),
-        TextButton(
-          onPressed: () {
-            setState(() {
-              _counter = !_counter;
-            });
-          },
-          child: const Text('No'),
-        ),
+        const SizedBox(height: 20),
         if (_counter)
           const Text(
             'YES!',
