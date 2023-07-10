@@ -8,8 +8,40 @@ class ButtonUpdatesDemo extends StatefulWidget {
 }
 
 class _ButtonUpdatesDemoState extends State<ButtonUpdatesDemo> {
+  var _counter = false;
   @override
   Widget build(context) {
-    return const Text("sajal");
+    print("build method for buttonupdatedemo executed");
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        TextButton(
+          onPressed: () {
+            setState(() {
+              _counter = !_counter;
+            });
+          },
+          child: const Text('Yes'),
+        ),
+        const SizedBox(width: 20),
+        TextButton(
+          onPressed: () {
+            setState(() {
+              _counter = !_counter;
+            });
+          },
+          child: const Text('No'),
+        ),
+        if (_counter)
+          const Text(
+            'YES!',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+      ],
+    );
   }
 }
