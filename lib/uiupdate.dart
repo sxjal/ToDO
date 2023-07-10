@@ -20,10 +20,18 @@ class _UiUpdatesDemoState extends State<UiUpdatesDemo> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Text(
-            'Every flutter developer should have a basic understanding of rendering of widgets?',
+            'Every flutter developer should have a basic understanding of internals?',
+            textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 18,
               fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 20),
+          const Text(
+            "Dso you understand how flutter updates the UI?",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.w600,
             ),
           ),
           const SizedBox(height: 20),
@@ -36,7 +44,7 @@ class _UiUpdatesDemoState extends State<UiUpdatesDemo> {
                     _counter = !_counter;
                   });
                 },
-                child: const Text('YES'),
+                child: const Text('Yes'),
               ),
               const SizedBox(width: 20),
               TextButton(
@@ -45,7 +53,7 @@ class _UiUpdatesDemoState extends State<UiUpdatesDemo> {
                     _counter = !_counter;
                   });
                 },
-                child: const Text('NO'),
+                child: const Text('No'),
               ),
             ],
           ),
