@@ -12,6 +12,7 @@ class _UiUpdatesDemoState extends State<UiUpdatesDemo> {
 
   @override
   Widget build(context) {
+    print("build method for uiupdatedemo executed");
     return Padding(
       padding: const EdgeInsets.all(30),
       child: Column(
