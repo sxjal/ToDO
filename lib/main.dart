@@ -4,9 +4,12 @@ import 'package:todo/keys/keys.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        body: Center(
+        appBar: AppBar(
+          title: const Text('TODO List'),
+        ),
+        body: const Center(
           child: Keys(),
         ),
       ),
