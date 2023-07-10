@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:todo/buttonupdate.dart';
 
-class UiUpdatesDemo extends StatefulWidget {
+class UiUpdatesDemo extends StatelessWidget {
   const UiUpdatesDemo({Key? key}) : super(key: key);
 
-  @override
-  State<UiUpdatesDemo> createState() => _UiUpdatesDemoState();
-}
-
-class _UiUpdatesDemoState extends State<UiUpdatesDemo> {
   @override
   Widget build(context) {
     print("build method for uiupdatedemo executed");
@@ -34,6 +30,7 @@ class _UiUpdatesDemoState extends State<UiUpdatesDemo> {
             ),
           ),
           SizedBox(height: 20),
+          ButtonUpdatesDemo(),
         ],
       ),
     );
